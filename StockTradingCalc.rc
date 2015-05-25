@@ -1,0 +1,274 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\StockTradingCalc.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\StockTradingCalc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于 StockTradingCalc"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "StockTradingCalc Version 1.1",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "CopyLeft (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "本程序各项费用计算如下：\n1、成交金额 ＝ 每股单价 * 股数；\n2、佣金 ＝ 成交金额 * 0.3%；(注：最低5元)\n3、过户费 = 股票面值 * 股数 * 0.06%；(注：沪市买卖都收，深市不收，股票面值一般为1元)\n4、印花税 = 成交金额 * 0.1%；(注：卖出时收)",
+                    IDC_STATIC,15,51,199,51
+    LTEXT           "沪深A股收益计算器",IDC_STATIC,76,37,60,8
+    LTEXT           "By Late Lee",IDC_STATIC,141,37,38,8
+    LTEXT           "本程序仅在国海证券交易系统中测试，\n本程序各项费用基本与金贝壳计算一致。",
+                    IDC_STATIC,19,106,193,17
+END
+
+IDD_STOCKTRADINGCALC_DIALOG DIALOGEX 0, 0, 203, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "StockTradingCalc"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,50,11,73,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,50,29,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,50,45,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,138,29,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,138,42,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,50,59,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,139,58,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "计算",IDC_BUTTON1,146,206,50,14
+    EDITTEXT        IDC_EDIT7,50,88,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,50,103,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,50,118,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,50,133,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,50,148,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,147,86,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,147,102,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,147,117,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,147,131,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,147,146,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,50,163,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,147,162,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "买入数量：",IDC_STATIC,15,46,34,8
+    LTEXT           "卖出数量：",IDC_STATIC,102,46,35,8
+    LTEXT           "印花税率：",IDC_STATIC,102,61,35,8
+    LTEXT           "成交金额：",IDC_STATIC,14,105,35,8
+    LTEXT           "佣金：",IDC_STATIC,14,121,22,8
+    LTEXT           "过户费：",IDC_STATIC,14,136,28,8
+    LTEXT           "成交金额：",IDC_STATIC,112,89,35,10
+    LTEXT           "佣金：",IDC_STATIC,112,105,22,8
+    LTEXT           "过户费：",IDC_STATIC,112,119,28,8
+    LTEXT           "印花税：",IDC_STATIC,112,134,28,8
+    LTEXT           "税费合计：",IDC_STATIC,14,151,35,8
+    LTEXT           "税费合计：",IDC_STATIC,112,150,35,8
+    LTEXT           "盈亏金额：",IDC_STATIC,14,196,35,8
+    LTEXT           "盈亏率：",IDC_STATIC,14,210,28,8
+    LTEXT           "证券类型：",IDC_STATIC,15,14,35,9
+    LTEXT           "买入价：",IDC_STATIC,15,31,28,8
+    LTEXT           "卖出价：",IDC_STATIC,102,31,28,8
+    LTEXT           "佣金比率：",IDC_STATIC,15,61,35,8
+    GROUPBOX        "买",IDC_STATIC,7,78,92,101
+    GROUPBOX        "卖",IDC_STATIC,106,78,90,101
+    LTEXT           "成本价：",IDC_STATIC,14,91,28,8
+    LTEXT           "股",IDC_STATIC,91,45,8,8
+    LTEXT           "股",IDC_STATIC,180,43,8,8
+    LTEXT           "元",IDC_STATIC,91,29,8,8
+    LTEXT           "元",IDC_STATIC,180,28,8,8
+    LTEXT           "%",IDC_STATIC,91,60,8,8
+    LTEXT           "%",IDC_STATIC,180,61,8,8
+    LTEXT           "%",IDC_STATIC,91,210,8,8
+    LTEXT           "元",IDC_STATIC,91,195,8,8
+    GROUPBOX        "输入项",IDC_STATIC,7,3,189,74
+    EDITTEXT        IDC_EDIT19,49,194,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,49,208,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "实际金额：",IDC_STATIC,14,165,35,8
+    LTEXT           "实际金额：",IDC_STATIC,112,165,35,8
+    GROUPBOX        "盈亏",IDC_STATIC,7,183,99,37
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "StockTradingCalc.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "StockTradingCalc.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_STOCKTRADINGCALC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 221
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_STOCKTRADINGCALC_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 6, 0
+0xa6bb, 0xb941, 0x00c9, 
+    IDC_COMBO1, 0x403, 6, 0
+0xeec9, 0xb941, 0x00c9, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 StockTradingCalc(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\StockTradingCalc.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
